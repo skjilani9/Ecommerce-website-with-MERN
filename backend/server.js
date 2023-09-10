@@ -4,20 +4,12 @@ import database from './config/database.js'
 import router from './routes/userroute.js'
 import cors from 'cors'
 import categoryroute from './routes/categoryroute.js'
-import cloudinary from 'cloudinary'
 import productroute from './routes/productroutes.js'
 
 
 
 
 dotenv.config({ path: "./.env" })
-
-
-cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET,
-})
 
 
 database()
